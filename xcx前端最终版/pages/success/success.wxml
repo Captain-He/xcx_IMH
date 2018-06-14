@@ -1,0 +1,12 @@
+<page>
+    <view class="container">
+        <icon type="waiting" size="93" />
+        <view class="info">
+            <caption>设置成功</caption>
+            <text class="supplementary">请返回主页面确认信息</text>
+        </view>
+        <view class="links">
+            <button type="primary" bindtap="viewMylist">查看我的药品列表</button>
+        </view>
+    </view>
+</page>

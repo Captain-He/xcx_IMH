@@ -1,0 +1,16 @@
+.img{
+ height: 200rpx;
+ width: 200rpx;
+ border-radius: 10%;
+}
+.th{position:fixed;left:0px;top:40px;}
+.two{position:fixed;left:100px;top:43px;}
+.shan{position:fixed;top:150px;font-size:40rpx;width:90%;height: 50px;}
+.xiu{position:fixed;top:220px;font-size:40rpx;width:90%;height: 50px;}
+.four{position:fixed;top:150px;width:90%;height: 150px;margin:0 30rpx 30rpx;}
+.hide{
+ display: none;
+}
+.show{ 
+ display: block;
+}

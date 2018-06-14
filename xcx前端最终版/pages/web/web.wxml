@@ -1,0 +1,21 @@
+
+<!--content-->
+<scroll-view scroll-y="true" class="content" style="height: {{windowHeight}}px; width: {{windowWidth}}px;" scroll-y="true" bindscrolltoupper="pullDownRefresh" bindscrolltolower="pullUpLoad">
+    <!--top-->
+    <view class="newsBox top">
+        <block  >
+            <navigator class="details">
+                <text class="title">{{title}}</text>
+                <view class="picBox">
+                    <image src="{{img}}"></image>
+                </view>
+                <view class="info">
+                    <text class="author">{{author}}</text>
+                    <text class="date">{{date}}</text>
+                </view>
+                <web-view src="{{url}}"></web-view>
+            </navigator>
+        </block>
+    </view>
+</scroll-view>
+

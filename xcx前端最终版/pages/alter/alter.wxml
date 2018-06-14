@@ -1,0 +1,48 @@
+<form class="info" bindsubmit="formSubmit" bindreset="formReset">
+
+      <view class='pic_box'>
+      <image class='pic' src='{{img_l}}' bindtap='preview_img' style=""></image>
+      <button class='pic_bt' bindtap='chooseImg' style='background-image:url(../../images/add-selected.png);'></button>
+      </view>
+	<view class="input-list">
+  		<view class="import">
+			<view class="information">药品名称</view>
+			<input name="message_name" type="text"  placeholder-style="color:#B2B2B2" maxlength="11" placeholder="请输入药品名称"/>
+		</view>
+      		<view class="import">
+			<view class="information">药品描述</view>
+			<input name="content" type="text"  placeholder-style="color:#B2B2B2" maxlength="11" placeholder="请输入药品描述"/>
+		</view>
+  <view class="timer">
+    <picker mode="time" name="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+      <view class="picker">
+      <view class="information">闹钟定时:</view>
+		<label  type="digit" value="{{time}}" placeholder-style="color:#B2B2B2" maxlength="11" placeholder="{{time}}" style='font-size:38rpx;position:absolute;top:7px;'>{{time}}</label>
+      </view>
+    </picker>
+  </view>
+
+		<block wx:for="{{infoList}}">
+			<view class="popup">
+				<view class="information">{{item.information}}</view>
+				<view class="select" id="{{index}}" bindtap="{{item.bindBtn}}">{{item.select}}</view>
+				<input hidden="{{inputHidden}}" name="{{item.name}}" value="{{item.val}}"/>
+			</view>
+		</block>
+
+	</view>
+	<view class="hint">{{textHint}}</view>
+	<navigator url="" ><button class="submit" formType="submit">添加药品信息</button></navigator>
+	<button formType="reset" class="resume">重新输入</button>
+</form>
+
+<view class="shade" hidden="{{hiddenBoolean}}">
+	<view class="layer" bindtap="hiddenBtn"></view>
+	<view class="selected">
+		<block wx:for="{{options}}">
+			<view bindtap="{{screenBtn}}" id="{{item.id}}" class="{{className[index]}}" >
+				<text>{{item.name}}</text>
+			</view>
+		</block>
+	</view>
+</view>

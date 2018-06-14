@@ -1,0 +1,40 @@
+[ 2018-05-17T20:22:57+08:00 ] 125.46.17.66 /xcx/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018687s ]
+SQL: SHOW COLUMNS FROM `xcx_message` [ RunTime:0.6188s ]
+SQL: SELECT Message.message_id AS message_id,Message.content AS content,Message.pic_url AS pic_url,Message.created_tm AS created_tm,Message.clock_tm AS clock_tm,Message.light AS light,Message.user_id AS user_id,Message.message_name AS message_name,Message.box_num AS box_num,Message.take AS take,Message.mark AS mark FROM xcx_message Message  [ RunTime:0.0635s ]
+
+[ 2018-05-17T20:24:28+08:00 ] 125.46.17.66 /xcx/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `xcx_message` [ RunTime:0.0543s ]
+SQL: SELECT Message.message_id AS message_id,Message.content AS content,Message.pic_url AS pic_url,Message.created_tm AS created_tm,Message.clock_tm AS clock_tm,Message.light AS light,Message.user_id AS user_id,Message.message_name AS message_name,Message.box_num AS box_num,Message.take AS take,Message.mark AS mark FROM xcx_message Message  [ RunTime:0.0004s ]
+
+[ 2018-05-17T20:24:31+08:00 ] 125.46.17.66 /xcx/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+SQL: SHOW COLUMNS FROM `xcx_message` [ RunTime:0.0655s ]
+SQL: SELECT Message.message_id AS message_id,Message.content AS content,Message.pic_url AS pic_url,Message.created_tm AS created_tm,Message.clock_tm AS clock_tm,Message.light AS light,Message.user_id AS user_id,Message.message_name AS message_name,Message.box_num AS box_num,Message.take AS take,Message.mark AS mark FROM xcx_message Message  [ RunTime:0.0004s ]
+
+[ 2018-05-17T20:28:13+08:00 ] 125.46.17.66 /xcx/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `xcx_message` [ RunTime:0.0458s ]
+SQL: SELECT Message.message_id AS message_id,Message.content AS content,Message.pic_url AS pic_url,Message.created_tm AS created_tm,Message.clock_tm AS clock_tm,Message.light AS light,Message.user_id AS user_id,Message.message_name AS message_name,Message.box_num AS box_num,Message.take AS take,Message.mark AS mark FROM xcx_message Message  [ RunTime:0.0007s ]
+

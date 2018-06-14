@@ -1,0 +1,17 @@
+<view class='one'>
+  <view class='two'>
+      <view>药格编号：{{box_num}}</view>
+      <view>定时时间：{{time}}</view>
+      <view>药物名称：{{name}}</view>
+      <view>药品描述：{{content}}</view>
+      <view>服药情况：{{mark}}</view> 
+  </view>
+  <view class='th'>
+    <image class="img" src="http://xcx.caption-he.com.cn/xcx/{{img}}"></image>
+  </view>
+  <view class='four'>
+     <button class="{{showview?'show':'hide'}}" bindtap="call" style='position:fixed;top:290px;font-size:40rpx;width:90%;height: 50px;'>电话提醒</button>
+     <button class="xiu" bindtap="xiu">修改</button>
+	   <button  class="shan" bindtap="shan">删除</button>
+  </view>
+</view>

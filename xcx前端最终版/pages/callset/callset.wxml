@@ -1,0 +1,25 @@
+<view class="{{showview1?'show':'hide'}}" >已填加的联系人信息：
+<view>姓名：{{name}}</view>
+<view>电话:{{num}}</view>
+</view>
+<view class="{{showview2?'show':'hide'}}">
+<form class="info" bindsubmit="formSubmit" bindreset="formReset">
+	<view class="input-list">
+  		<view class="import">
+			<view class="information">家人名称</view>
+			<input name="call_name" type="text"  placeholder-style="color:#B2B2B2" maxlength="11" placeholder="请输入家人名称"/>
+		</view>
+      		<view class="import">
+			<view class="information">联系电话</view>
+			<input name="call_num" type="text"  placeholder-style="color:#B2B2B2" maxlength="11" placeholder="请输入家人联系电话"/>
+		</view>
+  	</view>
+
+	<view class="hint">{{textHint}}</view>
+	<navigator url="" ><button class="submit" formType="submit">添加联系人信息</button></navigator>
+</form>
+</view>
+
+  <view class='four'>
+	   <button  class="{{showview1?'show':'hide'}}" bindtap="shan" style='position:fixed;top:150px;font-size:40rpx;width:90%;height: 50px;'>删除</button>
+  </view>

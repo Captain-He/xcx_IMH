@@ -1,0 +1,10 @@
+[ 2018-05-24T20:06:51+08:00 ] 122.206.190.18 /xcx/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.057995s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.019262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019437s ]
+SQL: SHOW COLUMNS FROM `xcx_message` [ RunTime:0.5094s ]
+SQL: SELECT Message.message_id AS message_id,Message.content AS content,Message.pic_url AS pic_url,Message.created_tm AS created_tm,Message.clock_tm AS clock_tm,Message.light AS light,Message.user_id AS user_id,Message.message_name AS message_name,Message.box_num AS box_num,Message.take AS take,Message.mark AS mark FROM xcx_message Message  [ RunTime:0.0533s ]
+

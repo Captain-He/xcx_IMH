@@ -1,0 +1,25 @@
+<view class="albums">
+    <block wx:for="{{albums}}" wx:key="id" wx:for-index="idx" wx:for-item="album">
+
+    <view class="table">
+        <view class="tr">
+            <view class="th"></view>
+        </view>
+        <navigator url="../content/content?id={{album.message_id}}&name={{album.message_name}}&content={{album.content}}&time={{album.clock_tm}}&light={{album.light}}&img={{album.pic_url}}&user_id={{album.user_id}}&box_num={{album.box_num}}&mark={{album.mark}}" > <button>  
+        <view class="tr" wx:for="{{1}}">      
+            <view class='td' style='width:20%;margin-top:16px;' > 
+              <image class="img" src="http://xcx.caption-he.com.cn/xcx/{{album.pic_url}}"></image>
+            </view>
+            <view class="td" > 
+               <view  style='margin-top:5px; font-size: 30rpx;margin-left:35px'>
+                <text class="title" >药品名称:{{album.message_name}}</text></view>
+                <view  style='margin-top:5px; font-size: 30rpx;margin-left:35px'>
+                <text class="description">闹钟:{{album.clock_tm}}</text></view>
+                </view>
+        </view>
+         </button> </navigator>
+    </view>
+    </block>
+</view>
+
+
